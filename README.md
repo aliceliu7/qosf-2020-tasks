@@ -4,9 +4,9 @@
 
 **Approach to completing tasks:** 
 
-# Task 2 
+### Task 2 
 
-## Requirements: 
+#### Requirements: 
 
 *Implement a circuit that returns |01> and |10> with equal probability.
 Requirements :
