@@ -60,6 +60,8 @@ The compiler takes a quantum circuit with an arbitrary sample 1 and 2 qubit gate
 It is a very simple translator that takes any quantum circuit made up of the basic gates I, S, H, X, Y, Z, RX, RY, RZ, CNOT, CZ to convert into a combination of gates RX, RZ and CZ.
 
 Mathematical operations and definitions of the quantum logic gates:
+
+
 <img width="679" alt="Screen Shot 2020-09-27 at 10 16 11 PM" src="https://user-images.githubusercontent.com/53191680/94383926-6543a000-010f-11eb-83d7-4697cd747571.png">
 
 
