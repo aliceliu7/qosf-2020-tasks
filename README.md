@@ -1,6 +1,6 @@
 # qosf-2020-tasks
 
-## Task 2 and Task 3 submissions for QOSF 2020
+### Task 2 and Task 3 submissions for QOSF 2020
 
 **Approach to completing tasks:** 
 
@@ -15,15 +15,15 @@ Start from all parameters in parametric gates being equal to 0 or randomly chose
 You should find the right set of parameters using gradient descent (you can use more advanced optimization methods if you like). 
 Simulations must be done with sampling (i.e. a limited number of measurements per iteration) and noise.*
 
-*Compare the results for different numbers of measurements: 1, 10, 100, 1000. 
+*Compare the results for different numbers of measurements: 1, 10, 100, 1000.*
 
-*Bonus question:
-How to make sure you produce state |01> + |10> and not |01> - |10> ?
+*Bonus question:*
+*How to make sure you produce state |01> + |10> and not |01> - |10> ?
 
-*(Actually for more careful readers, the “correct” version of this question is posted below:
-How to make sure you produce state  |01⟩  +  |10⟩  and not any other combination of |01> + e(i*phi)|10⟩ *(for example |01⟩  -  |10⟩)?)
+*(Actually for more careful readers, the “correct” version of this question is posted below:*
+How to make sure you produce state  |01⟩  +  |10⟩  and not any other combination of |01> + e(i*phi)|10⟩ *(for example |01⟩  -  |10⟩)?)*
 
-## Approach: 
+#### Approach: 
 
 |01> + |10> and |01> - |10> are Bell pairs 
 The chance of getting |01> and |10> are both 50% each. 
@@ -40,23 +40,23 @@ Applying gradient descent: the values of the parameters will be randomly set and
 Bonus Question: 
 Differentiating between |01> + |10> and |01> - |10>  require more gates. With an RX and RY gate, the state is mapped |+> to |0> and |-> to |1>. The |+> state of the first qubit with the CNOT gate results in the state |01> + |10>  while the |-> state with the CNOT gate results in the state |01> - |10>. The first qubit must be in the |+> state. In order to do that, with a starting qubit at |0>, a pi/2 rotation on the y-axis will map it to |+> and a 3pi/2 rotation on the y-axis will map it to |->. 
 
-# Task 3
+### Task 3
 
-## Requirements: 
+#### Requirements: 
 
-*Please write a simple compiler – program, which translates one quantum circuit into another, using a restricted set of gates.
+*Please write a simple compiler – program, which translates one quantum circuit into another, using a restricted set of gates.*
 
-*You need to consider just the basic gates for the input circuit, such as (I, H, X, Y, Z, RX, RY, RZ, CNOT, CZ).
+*You need to consider just the basic gates for the input circuit, such as (I, H, X, Y, Z, RX, RY, RZ, CNOT, CZ).*
 
-*The output circuit should consist only from the following gates: RX, RZ, CZ. In other words, each gate in the original circuit must be *replaced by an equivalent combination of gates coming from the restricted set (RX, RZ, CZ) only.
+*The output circuit should consist only from the following gates: RX, RZ, CZ. In other words, each gate in the original circuit must be* *replaced by an equivalent combination of gates coming from the restricted set (RX, RZ, CZ) only.*
 
-*For example, a Hadamard gate after compilation looks like this:
+*For example, a Hadamard gate after compilation looks like this:*
 
 *RZ(pi/2)
 *RX(pi/2)
 *RZ(pi/2)
 
-## Approach: 
+#### Approach: 
 
 The compiler takes a quantum circuit with an arbitrary sample 1 and 2 qubit gates while compiling it to a quantum circuit with the CZ, RX and RZ gates. 
 It is a very simple translator that takes any quantum circuit made up of the basic gates I, S, H, X, Y, Z, RX, RY, RZ, CNOT, CZ to convert into a combination of gates RX, RZ and CZ.
