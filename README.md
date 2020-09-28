@@ -2,8 +2,6 @@
 
 ### Task 2 and Task 3 submissions for QOSF 2020
 
-**Approach to completing tasks:** 
-
 ### Task 2 
 
 #### Requirements: 
